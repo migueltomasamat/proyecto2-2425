@@ -12,7 +12,7 @@ abstract class Cliente
     private string $nombre;
     private string $direccion;
     protected bool $abierto;
-    public array $telefonos;
+    public ?array $telefonos;
     private float $coste;
 
     public function __construct(string $uuid)
@@ -83,7 +83,7 @@ abstract class Cliente
 
     }
 
-    public function getTelefonos(): array
+    public function getTelefonos(): ?array
     {
         return $this->telefonos;
     }
@@ -110,6 +110,7 @@ abstract class Cliente
     //Métodos definidos por el programador
 
     abstract function comprobarDisponibilidad():bool;
+
 
 
 }

@@ -1,5 +1,5 @@
 DELIMITER //
-drop table if exists telefono cascade;
+drop table if exists phone cascade;
 drop table if exists user cascade;
 
 
